@@ -9,18 +9,14 @@ html {
     margin: 0;
 }
 
-.form-box {
+.box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.title-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .page-box {
@@ -32,17 +28,4 @@ html {
     border-width: 1px;
     width: 100vw;
     height: 100vh;
-}
-
-
-.title-box {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.form-box {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
 }
