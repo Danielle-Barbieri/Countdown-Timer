@@ -1,31 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: Open Sans;
+    --sky-blue-crayola: #72ddf7ff;
+    --pine-tree: #232e21ff;
+    --unbleached-silk: #ffe5d9ff;
+    --wisteria: #b497d6ff;
+    --palatinate-purple: #531253ff;
 }
 
-body,
-html {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
+@media (min-height: 430px) {
 
-.box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
 
-.page-box {
-    display: grid;
-    grid-template-rows: 15% 85%;
-    background-color: aqua;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    width: 100vw;
-    height: 100vh;
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .page-box {
+        display: grid;
+        grid-template-rows: 15% 65% 20%;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        width: 100vw;
+        height: 100vh;
+        color: var(--palatinate-purple);
+        background-color: var(--unbleached-silk);
+    }
+
+    .timer-box img {
+        height: 100%;
+    }
 }
