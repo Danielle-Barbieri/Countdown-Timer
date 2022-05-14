@@ -1,0 +1,45 @@
+User to be able to type inputs and display values
+Get HTML set up
+describe whys and hows
+
+How to Grab a DOM Element
+-1) Grab DOM elements (so we can play with it)
+    const myEl = document.getElementById('my-id)
+Things I Know How to Do With a DOM elements
+0) Listen to click
+1) Get value of input assuming its been grabbed
+    myInputEl.value = const whateverTheUserTyped
+2) Set value/text
+    myEl.textContent = 'Some new thing'
+3) Set color
+    myEl.style.color = 'Red'
+Other things you need to know: I can turn a string into a number 
+Number('5')
+What: 
+1. 3 inputs
+    to allow user to specify a value
+        figure out what the user typed
+2. Listen Button
+    Figure out when to display
+3. Div to display
+    Place to display the answer
+
+    Figure out what user typed: get value of inputs
+
+    Getting value: 
+
+   const whatIsInTheInput = input.value *how to get a value
+   
+   when to display: use the button = listen for a click
+   myButton.addEventListener('click', () => { code in here will happen after click }
+
+   setting text: for the div, you need to set the text content/display
+   divEl.textContent = 'Something'
+
+   go into website, inspect, store as global value, use temp1.value or textContent = ''
+
+
+   Button is a 'why'
+   .textContent is 'how' we change content
+   .value is how we get data from an input, store it in a constant
+   const whatTyped = inputEL.value
