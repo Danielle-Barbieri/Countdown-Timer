@@ -17,6 +17,9 @@ const buttonSubmit = document.getElementById('click-submit')
 buttonSubmit.addEventListener('click', (event) => {
     event.preventDefault();
     const dateInput = dateIn.value;
+    dateDifference(dateInput)
+    //you define a series of steps by creating a function which is a reuseable set of instructions, you call it so you can get the values, you call it to get the values (days, hours seconds)
+    //
     //const typeInput = typeIn.value;
     const titleInput = titleIn.value;
     //daysUntil = "days until"
@@ -34,3 +37,25 @@ buttonSubmit.addEventListener('click', (event) => {
 //     const userInput = titleIn.value;
 //     displayIn.textContent = userInput;
 // })
+
+// get total seconds between the times
+//var delta = Math.abs(date_future - date_now) / 1000;
+function dateDifference(dateInput) {
+    var dateNow = Math.floor(Date.now() / 1000);
+    var dateFuture = dateInput;
+
+    var delta = Math.abs(dateFuture - dateNow);
+
+    // calculate (and subtract) whole days
+    var days = Math.floor(delta / 86400);
+    delta -= days * 86400;
+
+    // calculate (and subtract) whole hours
+    var hours = Math.floor(delta / 3600) % 24;
+    delta -= hours * 3600;
+
+    // calculate (and subtract) whole minutes
+    var minutes = Math.floor(delta / 60) % 60;
+    delta -= minutes * 60;
+}
+//
